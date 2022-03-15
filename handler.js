@@ -3,7 +3,7 @@ const umekomi = document.getElementById('umekomi');
 
 // HTMLの読み込み(もっといい方法がありそう)
 var req = new XMLHttpRequest();
-req.open("GET", '/umekomi.html', true);
+req.open("GET", 'https://shnskfjwr.github.io/umekomi_test//umekomi.html', true);
 req.send(null)
 req.onload = function(){
     // HTMLの埋め込み
