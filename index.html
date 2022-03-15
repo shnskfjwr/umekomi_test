@@ -1,0 +1,17 @@
+<h1>埋め込みテスト</h1>
+<p>↓ここから埋め込み↓</p>
+
+<!-- このidをボタンHTMLで書き換えるイメージ -->
+<div id ='umekomi'></div>
+<script type="text/javascript">
+    (function() {
+        var js = document.createElement('script')
+        js.async = true;
+        // 導入時はCDNのアドレスにする
+        js.src = '/handler.js';
+        // 読み込んだJSをヘッダータグに追記して動作する様にする
+        document.getElementsByTagName('head')[0].appendChild(js);
+    })();
+</script>
+
+<p>↑ここまで埋め込み↑</p>
