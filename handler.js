@@ -12,7 +12,8 @@ req.onload = function(){
 
 }
 
-// HTML内で使用するJS関数はここで定義する
+// HTML内で使用するJS関数はここで定義しないと動かない
+// umekomi.html内でJSファイルを読み込んでも関数とみなされないため？
 function OnButtonClick() {
     alert('埋め込みボタンを押せました');
   }
